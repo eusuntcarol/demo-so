@@ -16,11 +16,23 @@ void print_and_wait(char *str, const void *p) {
 
 void f(void) {
     char *str1 = "hello there";
+    print_and_wait("str1", str1);
+
+    // ----
+    // str1[1] = '.';
+    // str1 = "abcd";
+    // ----
+
     char str2[32] = "hello there";
+    print_and_wait("str2", str2);
+
+    // ----
+    // str2[1] = '.';
+    // str2 = "abcd";
+    // ----
+
     int l;
 
-    print_and_wait("str1", str1);
-    print_and_wait("str2", str2);
     print_and_wait("l", &l);
 
     return;
@@ -29,9 +41,11 @@ void f(void) {
 int main(void) {
     int s_1;
     static int s_2;
+    static int s_3 = 3;
 
     print_and_wait("s_1", &s_1);
     print_and_wait("s_2", &s_2);
+    print_and_wait("s_3", &s_3);
     print_and_wait("a_1", &a_1);
     print_and_wait("a_2", &a_2);
     print_and_wait("b", &b);

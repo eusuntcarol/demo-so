@@ -27,9 +27,11 @@ void f(void) {
 }
 
 int main(void) {
-    int s;
+    int s_1;
+    static int s_2;
 
-    print_and_wait("s", &s);
+    print_and_wait("s_1", &s_1);
+    print_and_wait("s_2", &s_2);
     print_and_wait("a_1", &a_1);
     print_and_wait("a_2", &a_2);
     print_and_wait("b", &b);

@@ -15,7 +15,7 @@ int main(void)
     if (pid == 0) {
         printf("child pid %d\n", getpid());
         printf("child (a) - %d\n", a);
-        printf("child (a)- %p\n", &a);
+        printf("child (a) - %p\n", &a);
 
         getchar();
 

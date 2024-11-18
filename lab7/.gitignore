@@ -3,4 +3,6 @@ fork
 fork2
 exec
 vphys
+my_server
+my_worker_node
 __pycache__

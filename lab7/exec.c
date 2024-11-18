@@ -19,7 +19,7 @@ void perform_cat(char *dir) {
 }
 
 void perform_my_app() {
-    char *const argv[] = {"./my_app", NULL};
+    char *const argv[] = {"./my_server", NULL};
     execvp(argv[0], argv);
 }
 

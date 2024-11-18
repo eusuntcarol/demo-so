@@ -2,7 +2,7 @@ CC=gcc
 CFLAGS=-g
 LDLIBS=-lpthread
 
-all: fork fork2 exec my_app vphys
+all: fork fork2 exec my_server vphys my_worker_node
 
 fork: fork.o
 
@@ -20,9 +20,13 @@ exec: exec.o
 
 exec.o: exec.c
 
-my_app: my_app.o
+my_server: my_server.o
 
-my_app.o: my_app.c
+my_server.o: my_server.c
+
+my_worker_node: my_worker_node.o
+
+my_worker_node.o: my_worker_node.c
 
 clean:
-	rm -f fork fork2 vphys exec my_app *.o
+	rm -f fork fork2 vphys exec my_server my_worker_node *.o

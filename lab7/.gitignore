@@ -1,0 +1,6 @@
+*.o
+fork
+fork2
+exec
+vphys
+__pycache__

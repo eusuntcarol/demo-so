@@ -1,0 +1,7 @@
+*.o
+*.out
+dups
+pipe_redirect
+pipe
+file.txt
+file2.txt

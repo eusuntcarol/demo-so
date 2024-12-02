@@ -42,13 +42,14 @@ int main(void)
 
 #ifdef DUP
 	close(1);
-	dup(fd1);
+	dup(fd4);
 	printf("Test dup after redirect\n");
 #elif defined(DUP2)
-	// we want that our oldfd (fd1) to point to the newfd (1)
-	dup2(fd1, 1);
+	// we want that our oldfd (fd4) to point to the newfd (1)
+	dup2(fd4, 1);
 	printf("Test dup2 after redirect\n");
 #endif
+
 	printf("Test fd after redirect\n");
 
 	close(fd1);

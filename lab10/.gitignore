@@ -1,0 +1,7 @@
+*.o
+myfifo
+unix_socket
+client
+server
+fifo_reader
+fifo_writer

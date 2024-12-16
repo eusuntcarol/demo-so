@@ -1,0 +1,6 @@
+*.o
+server_blocking
+server_nonblocking
+server_multiplexing
+client
+
